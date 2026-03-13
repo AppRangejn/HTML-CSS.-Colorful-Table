@@ -1,0 +1,40 @@
+@import url('reset.css');
+
+body {
+    padding: 100px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: separate; 
+    border-spacing: 2px; 
+    outline: 10px solid #fc1f0c;
+}
+
+th, td {
+    padding: 5px;
+    border: 4px solid #1824ec; 
+    text-align: center;
+}
+
+thead th {
+    background-color: #fee4c4;
+    font-weight: bold;
+}
+
+tbody td:first-child {
+    background-color: #16fdff !important;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: #bdb76e;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #d3d3d3;
+}
+
+tfoot td {
+    background-color: #ea977b;
+}
