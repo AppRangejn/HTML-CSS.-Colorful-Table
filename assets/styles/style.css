@@ -9,7 +9,7 @@ table {
     max-width: 800px;
     border-collapse: separate; 
     border-spacing: 2px; 
-    outline: 10px solid #fc1f0c;
+    border: 10px solid #fc1f0c;
 }
 
 th, td {
@@ -23,10 +23,6 @@ thead th {
     font-weight: bold;
 }
 
-tbody td:first-child {
-    background-color: #16fdff !important;
-}
-
 tbody tr:nth-child(odd) td {
     background-color: #bdb76e;
 }
@@ -35,6 +31,21 @@ tbody tr:nth-child(even) td {
     background-color: #d3d3d3;
 }
 
+tbody tr td:first-child {
+    background-color: #16fdff;
+}
+
 tfoot td {
     background-color: #ea977b;
+}
+
+caption {
+    font-size: 30px;
+    padding: 10px;
+    color: #fc1f0c; 
+}
+
+caption::after {
+    content: "#05";
+    color: purple;
 }
